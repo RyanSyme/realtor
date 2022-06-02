@@ -9,7 +9,7 @@ const Banner = ({ purpose, imageUrl, title1, title2, desc1, desc2, buttonText, l
       <Text color='grey.500' fontSize='sm' fontWeight='medium' >{purpose}</Text>
       <Text fontSize='3xl' fontWeight='bold' >{title1}<br/>{title2}</Text>
       <Text color='grey.700' fontSize='lg' paddingTop='3' paddingBottom='3'>{desc1}<br/>{desc2}</Text>
-      <Button fontSize='xl' bg='blue.300' color='white' >
+      <Button fontSize='xl' fontWeight='bold'>
         <Link href={linkName}>{buttonText}</Link>
       </Button>
     </Box>
@@ -18,8 +18,7 @@ const Banner = ({ purpose, imageUrl, title1, title2, desc1, desc2, buttonText, l
 
 export default function Home() {
   return (
-    <div>
-      <h1>Fuck You</h1>
+    <Box>
       <Banner 
         purpose='RENT A HOME'
         title1='Rental Homes for'
@@ -40,6 +39,6 @@ export default function Home() {
         linkName='/search?purpose=for-sale'
         imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008'
       />
-    </div>
+    </Box>
   )
 }
