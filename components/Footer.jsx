@@ -5,3 +5,5 @@ const Footer = ()=> (
         2022 Realtor, Inc
     </Box>
 )
+
+export default Footer
