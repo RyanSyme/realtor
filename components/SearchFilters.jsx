@@ -6,6 +6,7 @@ import Image from 'next/image'
 
 import { filterData, getFilterValues } from '../utils/filterData'
 
+// Imports data from filterData.js runs filter function on api data
 const SearchFilters = ()=> {
     const [filters, setFilters] = useState(filterData)
     const router = useRouter();
