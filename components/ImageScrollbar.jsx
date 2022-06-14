@@ -12,7 +12,7 @@ const LeftArrow = ()=> {
             <Icon 
                 as={FaArrowAltCircleLeft}
                 onClick={()=> scrollPrev()} 
-                fontSize='2x1'
+                fontSize='2xl'
                 cursor='pointer'
             />
         </Flex>
@@ -27,7 +27,7 @@ const RightArrow = ()=> {
             <Icon 
                 as={FaArrowAltCircleRight}
                 onClick={()=> scrollNext()} 
-                fontSize='2x1'
+                fontSize='2xl'
                 cursor='pointer'
             />
         </Flex>
