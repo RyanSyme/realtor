@@ -16,15 +16,17 @@ const SearchFilters = ()=> {
         const { query } = router
         const values = getFilterValues(filterValues)
 
-        values.forEach((item)=> {
-            query[item.name] = item.value
-        })
+        values.forEach((item) => {
+            if(item.value && filterValues?.[item.name]) {
+              query[item.name] = item.value
+            }
+          })
 
         router.push({pathname: path, query: query})
     }
 
     return (
-        <Flex bg='grey.100' p='4' justifyContent='center' flexWrap='wrap'>
+        <Flex bg='gray.100' p='4' justifyContent='center' flexWrap='wrap'>
             {filters.map((filter) => (
                 <Box key={filter.queryName} >
                     <Select 
